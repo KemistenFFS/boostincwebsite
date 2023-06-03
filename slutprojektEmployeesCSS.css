@@ -1,0 +1,375 @@
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,300&display=swap');
+
+	body, html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+}
+	
+	* {
+	  margin: 0;
+	  font-family: 'Montserrat', sans-serif;
+	}
+
+	a {
+	  font-family: "Montserrat";
+	  font-size: 20px;
+	  color: #24303F;
+	}
+
+	.container {
+	  display: flex;
+	  align-items: center;
+	  background-color: white;
+	  padding: 20px;
+	  position: sticky;
+	  top: 0;
+	  z-index: 1;
+	  overflow: hidden;
+	  color: #24303F;
+	}
+
+	.logo {
+	  display: inline-block;
+	  margin: 0;
+	  max-height: 250px;
+	  max-width: 500px;
+	}
+
+	.nav {
+	  display: flex;
+	  margin: 0;
+	}
+
+	.nav-menu {
+	  display: flex;
+	  list-style: none;
+	  margin-left: 800px;
+	  padding: 0;
+	}
+
+	.nav-menu li {
+	  margin-right: 30px;
+	}
+
+	.nav-menu li a:hover {
+	  color: gray;
+	}
+
+	.nav-menu li:last-child {
+	  margin-right: 0;
+	}
+
+	.nav-menu li a {
+	  color: #333;
+	  text-decoration: none;
+	}
+	
+	
+
+	.footer {
+	  background-color: blue;
+	  padding: 50px 0;
+	}
+
+	.container2 {
+	  background-color: #24303F;
+	  padding: 50px;
+
+	}
+
+	.footer-col {
+	  width: 25%;
+	  padding: 0 15px;
+	}
+
+	.footer-col h4 {
+	  font-size: 18px;
+	  color: #ffffff;
+	  text-transform: capitalize;
+	  margin-bottom: 35px;
+	  font-weight: 500;
+	  position: relative;
+	}
+
+	.footer-col h4::before {
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  bottom: -10px;
+	  background-color: white;
+	  height: 2px;
+	  box-sizing: border-box;
+	  width: 50px;
+	}
+
+	.footer-col ul li:not(:last-child) {
+	  margin-bottom: 10px;
+	}
+
+	.footer-col ul li a {
+	  font-size: 16px;
+	  text-transform: capitalize;
+	  color: #ffffff;
+	  text-decoration: none;
+	  font-weight: 300;
+	  color: #bbbbbb;
+	  display: block;
+	  transition: all 0.3s ease;
+	}
+
+	.footer-col ul li a:hover {
+	  color: #ffffff;
+	  padding-left: 8px;
+	}
+
+	.image-container {
+	  display: flex;
+	  justify-content: left;
+	  align-items: left;
+	  margin-top: 50px;
+	}
+
+	.image-box {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+
+	.employee-info {
+	  text-align: right;
+	  margin-bottom: 10px;
+	}
+
+	.employee-name {
+	  font-size: 24px;
+	  color: #24303F;
+	  margin-bottom: 5px;
+	  text-align:left;
+	}
+
+	#job-description {
+	  font-size: 16px;
+	  color: #24303F;
+	  text-align:left;
+	  margin-right:500px;
+	}
+
+	#employee-info {
+	  margin-top: 50px;
+	  opacity: 0;
+	  transition: opacity 0.5s;
+	}
+
+	.dropdown {
+		position: relative;
+		margin-top: 10px;
+		margin-right:1100px;
+		text-align: left;
+		
+	}
+
+	.dropdown-btn {
+		background-color: #f1f1f1;
+		color: #333;
+		padding: 8px 16px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		width: 100%;
+		padding: 10px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		width: 300px;
+		text-align:left;
+	}
+
+	.dropdown-content p {
+		margin: 0 0 10px 0;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.review {
+		margin-top:50px;
+		margin-bottom: 20px;
+		border: 0.5px solid gray;
+		padding:20px;
+
+	  
+	}
+
+	.reviewText{
+		text-align:left;
+		margin-top:50px;
+	}
+	.review-info {
+	  display: flex;
+	  align-items: center;
+	}
+
+	.review-name {
+	  font-size: 18px;
+	  margin-right: 10px;
+	}
+
+	.review-text {
+	  font-size: 16px;
+	  margin-right: 10px;
+	}
+
+	.rating-star {
+	  color: gold;
+	  font-size: 20px;
+	}
+
+
+@media (max-width: 1910px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
+  .nav-menu li {
+    margin-right: 15px;
+  }
+  
+  .nav{
+	  display:flex;
+  }
+
+  .logo {
+    max-height: 150px;
+    max-width: 300px;
+  }
+
+  .employee-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #job-description {
+    margin-right: 0;
+  }
+
+  .dropdown {
+    margin-right: 10px;
+  }
+
+  .review-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .review-name {
+    margin-bottom: 5px;
+  }
+
+  .review-text {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 525px) {
+	
+
+	.nav-menu li {
+		display:none;
+	}
+}	
+
+@media (max-width: 600px) {
+	
+		.nav{
+			padding-left:-20px;
+			padding-right:-20px;
+	}
+	
+	.nav-menu li {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 766px) {
+		.image-box {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	
+	.image-box img {
+			  width:100%;
+	  height:100%;
+	}
+	
+	.container {
+		flex-direction: column;
+		align-items: center;
+		padding: 10px;
+	}
+
+	.nav-menu {
+		margin-left: 0;
+	}
+
+	.logo {
+		max-height: 150px;
+		max-width: 300px;
+	}
+
+	.footer-col {
+		width: 100%;
+	}
+
+	.image-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.employee-info {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	#job-description {
+		margin-right: 0;
+	}
+
+	.dropdown {
+		margin-right: 10px;
+	}
+
+	.review {
+		padding: 10px;
+	}
+
+	.review-info {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 10px;
+	}
+
+	.review-name {
+		margin-bottom: 5px;
+	}
+
+	.review-text {
+		margin-bottom: 5px;
+	}
+	
+		.dropdown-btn {
+		padding: 16px 32px;
+	}
+}
