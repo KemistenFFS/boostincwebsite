@@ -573,3 +573,23 @@ img {
 
 }
 
+@media (max-height: 1020px){
+
+	h1{
+		font-size:30px;
+	}
+
+}
+
+@media (max-height: 710px){
+
+	h1{
+		font-size:25px;
+	}
+	
+	.Employees{
+		margin-top:400px;
+	}
+
+}
+
